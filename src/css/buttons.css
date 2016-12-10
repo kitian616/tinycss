@@ -1,0 +1,54 @@
+.tiny-button {
+    box-sizing: border-box;
+    min-width: 4.5em;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    padding: .5em 1em;
+    border: 0;
+    border-radius: 2px;
+    user-select: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    outline: none;
+    color: rgba(0,0,0,.8);
+    background-color: #e6e6e6;
+}
+
+.tiny-button-hover, .tiny-button:hover, .tiny-button:focus {
+    background-image: linear-gradient(transparent,rgba(0,0,0,.05) 40%, rgba(0,0,0,.1));
+}
+
+.tiny-button-active, .tiny-button:active {
+    box-shadow: 0 0 1px rgba(0,0,0,.15) inset, 0 0 6px rgba(0,0,0,.2) inset;
+}
+
+.tiny-button[disabled], .tiny-button:disabled, .tiny-button-disabled,
+.tiny-button-disabled:hover, .tiny-button-disabled:focus, .tiny-button-disabled:active {
+    cursor: not-allowed;
+    background-image: none;
+    opacity: .4;
+    border: 0;
+    box-shadow: none;
+}
+
+.tiny-button-primary {
+    color: #fff;
+    background-color: #0078e7;
+}
+
+.button-xsmall {
+    font-size: 70%;
+}
+
+.button-small {
+    font-size: 85%;
+}
+
+.button-large {
+    font-size: 110%;
+}
+
+.button-xlarge {
+    font-size: 125%;
+}

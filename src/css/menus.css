@@ -1,0 +1,68 @@
+.tiny-menu {
+    box-sizing: border-box;
+}
+
+.tiny-menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tiny-menu-horizontal .tiny-menu-list {
+    letter-spacing: -.31em;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.tiny-menu-horizontal .tiny-menu-item {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    padding: 0;
+    letter-spacing: normal;
+    text-align: center;
+    vertical-align: top;
+}
+
+.tiny-menu-link, .tiny-menu-disabled, .tiny-menu-heading {
+    letter-spacing: normal;
+    padding: .5em 1em;
+    border: 0;
+    border-radius: 2px;
+    color: rgba(0,0,0,.8);
+}
+
+.tiny-menu-link, tiny-menu-heading {
+    display: block;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.tiny-menu-active>.tiny-menu-link, .tiny-menu-link:hover, .tiny-menu-link:focus {
+    background-image: linear-gradient(transparent, rgba(0,0,0,.05) 40%, rgba(0,0,0,.1));
+    background-color: #efefef;
+    outline: none;
+}
+
+.tiny-menu-disabled {
+    opacity: .5;
+}
+
+.tiny-menu-heading {
+    text-transform: uppercase;
+}
+
+.tiny-menu-has-children {
+    background: red;
+}
+
+.tiny-menu-children {
+    display: none !important;
+    position: absolute;
+}
+
+.tiny-menu-children.show{
+    display: inherit !important;
+}
