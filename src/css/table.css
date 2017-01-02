@@ -1,0 +1,46 @@
+.tiny-table {
+    color: rgba(0,0,0,.8);
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+.tiny-table th, .tiny-table td {
+    border: 1px solid #ccc;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    padding: .6em 1em;
+}
+
+.tiny-table thead {
+    font-weight: bold;
+    background-color: #e6e6e6;
+}
+
+.tiny-table thead {
+    font-weight: bold;
+    background-color: #e6e6e6;
+}
+
+.tiny-table-bordered th, .tiny-table-bordered td {
+    border-top-width: 1px !important;
+    border-bottom-width: 1px !important;
+}
+
+.tiny-table-horizontal th, .tiny-table-horizontal td {
+    border-top-width: 1px !important;
+    border-bottom-width: 1px !important;
+    border-left-width: 0 !important;
+    border-right-width: 0 !important;
+}
+
+.tiny-table-hover tbody tr:hover {
+    background-image: linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05));
+}
+
+.tiny-table-striped tbody tr:nth-child(odd) {
+    background-color: #f3f3f3;
+}
+
+.tiny-table-odd {
+    background-color: #f3f3f3;
+}

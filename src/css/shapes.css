@@ -1,0 +1,11 @@
+.tiny-round {
+    border-radius: 10em;
+}
+
+.tiny-rectangle {
+    border-radius: 0;
+}
+
+.tiny-rounded-rectangle  {
+    border-radius: 4px;
+}

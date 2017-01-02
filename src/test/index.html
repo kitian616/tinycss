@@ -4,20 +4,41 @@
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../../static/icons/iconfont.css" rel="stylesheet">
         <link href="../../dist/css/base.css" rel="stylesheet">
         <link href="../../dist/css/grids.css" rel="stylesheet">
         <link href="../../dist/css/buttons.css" rel="stylesheet">
         <link href="../../dist/css/menus.css" rel="stylesheet">
+        <link href="../../dist/css/table.css" rel="stylesheet">
+        <link href="../../dist/css/shape.css" rel="stylesheet">
+        <link href="../../dist/css/styles.css" rel="stylesheet">
         <style>
+            body {
+                font-family: -apple-system, "Helvetica Neue", Arial, "PingFang SC",
+                    "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB",
+                    "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+            }
             .tinycss-example {
                 padding: 1em 2em;
             }
             .item {
                 margin: 8px 10px;
             }
+            .custom-restricted-width {
+                display: inline-block;
+            }
+            .tiny-menu {
+                margin: 2em 0;
+            }
+            table {
+                margin: 1em 0;
+            }
         </style>
     </head>
     <body>
+        <div class="clearfix">
+            <div class="float-right">asfdasf </div>
+        </div>
         <div class="tinycss-example">
             <div class="tiny-g">
                 <div class="tiny-u-1 tiny-u-sm-1-2 tiny-u-md-1-3 tiny-u-lg-1-4 tiny-u-xl-1-5">
@@ -36,33 +57,282 @@
                     <p>I'm the 5th.</p>
                 </div>
             </div>
-            <div class="tiny-g">
-                <a class="item tiny-button tiny-u-1-3">OK</a>
-                <button class="item tiny-button tiny-u-1-3">OK</button>
-                <a class="item tiny-button tiny-u-1-3" disabled>OK</a>
-                <button class="item tiny-button tiny-button-disabled tiny-u-1-3">OK</button>
-                <button class="item tiny-button tiny-button-primary tiny-u-1-3">OK</button>
-                <a class="item tiny-button tiny-button-primary tiny-u-1-3">OK</a>
-                <a class="item button-xsmall tiny-button tiny-button-primary tiny-u-1-3">OK</a>
-                <a class="item button-small tiny-button tiny-button-primary tiny-u-1-3">OK</a>
-                <a class="item button-large tiny-button tiny-button-primary tiny-u-1-3">OK</a>
-                <a class="item button-xlarge tiny-button tiny-button-primary tiny-u-1-3">OK</a>
+            <div>
+                <a class="item tiny-button">OK</a>
+                <button class="item tiny-button">OK</button>
+                <a class="item tiny-button" disabled>OK</a>
+                <button class="item tiny-button tiny-button-disabled">OK</button>
+                <button class="item tiny-button tiny-button-primary">OK</button>
+                <a class="item tiny-button tiny-button-primary">OK</a>
+                <a class="item button-xsmall tiny-button tiny-button-primary">OK</a>
+                <a class="item button-small tiny-button tiny-button-primary">OK</a>
+                <a class="item button-large tiny-button tiny-button-primary">OK</a>
+                <a class="item button-xlarge tiny-button tiny-button-primary">OK</a>
+            </div>
+            <div>
+                <a class="item tiny-button tiny-round">OK</a>
+                <a class="item tiny-button tiny-rectangle">OK</a>
+                <a class="item tiny-button tiny-rounded-rectangle">OK</a>
             </div>
             <div class="tiny-menu tiny-menu-horizontal">
                 <ul class="tiny-menu-list">
-                    <li class="tiny-menu-item"><a href="" class="tiny-menu-link">biadu</a></li>
-                    <li class="tiny-menu-item"><a href="" class="tiny-menu-link">biadu</a></li>
-                    <li class="tiny-menu-item"><a href="" class="tiny-menu-link">biadu</a></li>
-                    <li class="tiny-menu-item tiny-menu-has-children">
-                        <a href="" class="tiny-menu-link">biadu</a>
+                    <li class="tiny-menu-item tiny-menu-has-children tiny-menu-allow-hover">
+                        <a href="" class="tiny-menu-link">亚洲</a>
                         <ul class="tiny-menu-list tiny-menu-children">
-                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">biadu</a></li>
-                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">biadu</a></li>
+                            <li class="tiny-menu-item tiny-menu-has-children tiny-menu-allow-hover">
+                                <a href="" class="tiny-menu-link">中国</a>
+                                <ul class="tiny-menu-list tiny-menu-children">
+                                    <li class="tiny-menu-item tiny-menu-has-children  tiny-menu-allow-hover">
+                                        <a href="" class="tiny-menu-link">华北地区</a>
+                                        <ul class="tiny-menu-list tiny-menu-children">
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">北京市</a></li>
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">天津市</a></li>
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">河北省</a></li>
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">内蒙古自治区</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="tiny-menu-item tiny-menu-has-children tiny-menu-allow-hover">
+                                        <a href="" class="tiny-menu-link">东北地区</a>
+                                        <ul class="tiny-menu-list tiny-menu-children">
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">辽宁省</a></li>
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">吉林省</a></li>
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">黑龙江省</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="tiny-menu-item tiny-menu-has-children tiny-menu-allow-hover">
+                                        <a href="" class="tiny-menu-link">华东地区</a>
+                                        <ul class="tiny-menu-list tiny-menu-children">
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">上海市</a></li>
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">江苏省</a></li>
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">浙江省</a></li>
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">安徽省</a></li>
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">福建省</a></li>
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">江西省</a></li>
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">山东省</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="tiny-menu-item tiny-menu-has-children tiny-menu-allow-hover">
+                                        <a href="" class="tiny-menu-link">中南地区</a>
+                                        <ul class="tiny-menu-list tiny-menu-children">
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">河南省</a></li>
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">湖北省</a></li>
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">湖南省</a></li>
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">广东省</a></li>
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">广西壮族自治区</a></li>
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">海南省</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="tiny-menu-item tiny-menu-has-children tiny-menu-allow-hover">
+                                        <a href="" class="tiny-menu-link">西北地区</a>
+                                        <ul class="tiny-menu-list tiny-menu-children">
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">陕西省</a></li>
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">甘肃省</a></li>
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">青海省</a></li>
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">宁夏回族自治区</a></li>
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">新疆维吾尔自治区</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="tiny-menu-item tiny-menu-has-children tiny-menu-allow-hover">
+                                        <a href="" class="tiny-menu-link">西南地区</a>
+                                        <ul class="tiny-menu-list tiny-menu-children">
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">重庆市</a></li>
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">四川省</a></li>
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">贵州省</a></li>
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">云南省</a></li>
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">西藏自治区</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="tiny-menu-item tiny-menu-has-children tiny-menu-allow-hover">
+                                        <a href="" class="tiny-menu-link">港澳台地区</a>
+                                        <ul class="tiny-menu-list tiny-menu-children">
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">台湾省</a></li>
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">香港特别行政区</a></li>
+                                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">澳门特别行政区</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">韩国</a></li>
+                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">日本</a></li>
+                        </ul>
+                    </li>
+                    <li class="tiny-menu-item"><a href="" class="tiny-menu-link">欧洲</a></li>
+                    <li class="tiny-menu-item"><a href="" class="tiny-menu-link">非洲</a></li>
+                    <li class="tiny-menu-item"><a href="" class="tiny-menu-link">大洋洲</a></li>
+                    <li class="tiny-menu-item"><a href="" class="tiny-menu-link">北美洲</a></li>
+                    <li class="tiny-menu-item"><a href="" class="tiny-menu-link">南美洲</a></li>
+                </ul>
+            </div>
+            <div class="tiny-menu custom-restricted-width">
+                <ul class="tiny-menu-list">
+                    <li class="tiny-menu-item"><a href="" class="tiny-menu-link">aaaa</a></li>
+                    <li class="tiny-menu-item"><a href="" class="tiny-menu-link">aaaa</a></li>
+                    <li class="tiny-menu-item tiny-menu-has-children tiny-menu-allow-hover">
+                        <a href="" class="tiny-menu-link">aaaa</a>
+                        <ul class="tiny-menu-list tiny-menu-children">
+                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">bbbb</a></li>
+                            <li class="tiny-menu-item tiny-menu-has-children tiny-menu-allow-hover">
+                                <a href="" class="tiny-menu-link">bbbb</a>
+                                <ul class="tiny-menu-list tiny-menu-children">
+                                    <li class="tiny-menu-item"><a href="" class="tiny-menu-link">cccc</a></li>
+                                    <li class="tiny-menu-item"><a href="" class="tiny-menu-link">cccc</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                 </ul>
             </div>
+            <div class="tiny-menu tiny-menu-accordion">
+                <ul class="tiny-menu-list">
+                    <li class="tiny-menu-item"><a href="" class="tiny-menu-link">aaaa</a></li>
+                    <li class="tiny-menu-item"><a href="" class="tiny-menu-link">aaaa</a></li>
+                    <li class="tiny-menu-item tiny-menu-has-children tiny-menu-allow-hover">
+                        <a href="" class="tiny-menu-link">aaaa</a>
+                        <ul class="tiny-menu-list tiny-menu-children">
+                            <li class="tiny-menu-item"><a href="" class="tiny-menu-link">bbbb</a></li>
+                            <li class="tiny-menu-item tiny-menu-has-children tiny-menu-allow-hover">
+                                <a href="" class="tiny-menu-link">bbbb</a>
+                                <ul class="tiny-menu-list tiny-menu-children">
+                                    <li class="tiny-menu-item"><a href="" class="tiny-menu-link">cccc</a></li>
+                                    <li class="tiny-menu-item"><a href="" class="tiny-menu-link">cccc</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <table class="tiny-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Make</th>
+                        <th>Model</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+            
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Honda</td>
+                        <td>Accord</td>
+                        <td>2009</td>
+                    </tr>
+            
+                    <tr>
+                        <td>2</td>
+                        <td>Toyota</td>
+                        <td>Camry</td>
+                        <td>2012</td>
+                    </tr>
+            
+                    <tr>
+                        <td>3</td>
+                        <td>Hyundai</td>
+                        <td>Elantra</td>
+                        <td>2010</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="tiny-table tiny-table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Make</th>
+                        <th>Model</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+            
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Honda</td>
+                        <td>Accord</td>
+                        <td>2009</td>
+                    </tr>
+            
+                    <tr>
+                        <td>2</td>
+                        <td>Toyota</td>
+                        <td>Camry</td>
+                        <td>2012</td>
+                    </tr>
+            
+                    <tr>
+                        <td>3</td>
+                        <td>Hyundai</td>
+                        <td>Elantra</td>
+                        <td>2010</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="tiny-table tiny-table-horizontal tiny-table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Make</th>
+                        <th>Model</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+            
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Honda</td>
+                        <td>Accord</td>
+                        <td>2009</td>
+                    </tr>
+            
+                    <tr>
+                        <td>2</td>
+                        <td>Toyota</td>
+                        <td>Camry</td>
+                        <td>2012</td>
+                    </tr>
+            
+                    <tr>
+                        <td>3</td>
+                        <td>Hyundai</td>
+                        <td>Elantra</td>
+                        <td>2010</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="tiny-table tiny-table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Make</th>
+                        <th>Model</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+            
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Honda</td>
+                        <td>Accord</td>
+                        <td>2009</td>
+                    </tr>
+            
+                    <tr>
+                        <td>2</td>
+                        <td>Toyota</td>
+                        <td>Camry</td>
+                        <td>2012</td>
+                    </tr>
+            
+                    <tr>
+                        <td>3</td>
+                        <td>Hyundai</td>
+                        <td>Elantra</td>
+                        <td>2010</td>
+                    </tr>
+                </tbody>
+            </table>    
         </div>
-        <script src="./index.js"></script>
     </body>
 </html>
